@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+</head>
+
+<body>
+  <div class="container">
+    <div class="demo-section">
+      <h2>Настройка подсказки</h2>
+
+      <div class="form-group">
+        <label for="tooltip-title">Заголовок подсказки:</label>
+        <input type="text" id="tooltip-title" value="Информация" placeholder="Введите заголовок">
+      </div>
+
+      <div class="form-group">
+        <label for="tooltip-content">Текст подсказки:</label>
+        <textarea id="tooltip-content"
+          placeholder="Введите текст подсказки">Это демонстрационная подсказка с заголовком и основным текстом</textarea>
+      </div>
+
+      <div class="form-group">
+        <label>Позиция подсказки:</label>
+        <div class="radio-group">
+          <label class="radio-label">
+            <input type="radio" name="placement" value="top" checked>
+            Сверху
+          </label>
+          <label class="radio-label">
+            <input type="radio" name="placement" value="right">
+            Справа
+          </label>
+          <label class="radio-label">
+            <input type="radio" name="placement" value="bottom">
+            Снизу
+          </label>
+          <label class="radio-label">
+            <input type="radio" name="placement" value="left">
+            Слева
+          </label>
+        </div>
+      </div>
+
+      <div class="form-group">
+        <label>Тип подсказки:</label>
+        <div class="radio-group">
+          <label class="radio-label">
+            <input type="radio" name="type" value="default" checked>
+            Обычная
+          </label>
+          <label class="radio-label">
+            <input type="radio" name="type" value="success">
+            Успех
+          </label>
+          <label class="radio-label">
+            <input type="radio" name="type" value="warning">
+            Предупреждение
+          </label>
+          <label class="radio-label">
+            <input type="radio" name="type" value="info">
+            Информация
+          </label>
+        </div>
+      </div>
+
+      <button type="submit" class="btn" id="submit-btn">
+        Показать подсказку
+      </button>
+    </div>
+  </div>
+</body>
+
+</html>
